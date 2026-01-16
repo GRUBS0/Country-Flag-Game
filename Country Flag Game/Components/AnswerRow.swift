@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AnswerRow: View {
+    @Environment(GameManager.self) var gameManager
     var answer: Answer
     @State private var isSelected = false
     var body: some View {
