@@ -17,7 +17,7 @@ struct QuestionView: View {
                         .fontWeight(.heavy)
                         .padding()
                     Spacer ()
-                    Text("\(gameManager.index) out of |(gameManager.questions.count)")
+                    Text("\(gameManager.index) out of \(gameManager.questions.count)")
                         .padding ()
                 }
                 ProgressBar(progress: gameManager.progress)
